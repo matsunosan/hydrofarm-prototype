@@ -3,8 +3,6 @@
 ## Description of the Project
 The Automated Hydroponic Farm is a system designed to manage water levels and automate key processes in a hydroponic farming environment. Utilizing servo motors, a liquid level sensor, and a relay, the system monitors the water reservoir's level, controls water flow, and provides real-time feedback. This project is ideal for educational purposes and small-scale hydroponic setups.
 
-Note: In TinkerCAD, a water level sensor is not available. Instead, a temperature sensor is used to simulate water level readings for demonstration purposes.
-
 ## Components Used
 - **Arduino Uno R3**: Microcontroller to manage the system.
 - **3 Servo Motors**: Control valves or other mechanisms for automation.
@@ -13,6 +11,19 @@ Note: In TinkerCAD, a water level sensor is not available. Instead, a temperatur
 - **5V Power Supply**: Powers the components.
 - **Breadboard and Jumper Wires**: Facilitate connections between components.
 - **LEDs and Resistors (optional)**: For status indication (not shown in this setup).
+
+## Circuit Schematic
+### The system uses an ESP8266 microcontroller for managing the automation process, including servo control and water pump operation. The setup features:
+
+- **Power Supply:** A 12V DC input, stepped down to 5V and 3.3V using a buck converter.
+- **Servos (A, B, C):** Operated via GPIO pins, powered through a +5V bus.
+- **Relay Module:** Controls a water pump connected to a 12V power source.
+- **eTape Sensor:** A liquid level sensor interfaced with the ESP8266 (simulated in TinkerCAD with a TMP36 sensor).
+
+Refer to the circuit schematic below for detailed wiring and component connections:
+![fritzing hydro_schem_legend](https://github.com/user-attachments/assets/6719c89d-445d-435e-9694-acde23dac81f)
+**Note:** In TinkerCAD, a water level sensor is not available. Instead, a temperature sensor is used to simulate water level readings for demonstration purposes.
+
 
 ## Setup Instructions
 1. **Circuit Assembly**:
@@ -92,7 +103,7 @@ void loop() {
 ```
 
 ## Screenshots
-1. **Circuit Diagram on TinkerCAD**:
+- **Circuit Diagram on TinkerCAD**:
 ![image](https://github.com/user-attachments/assets/5304d6e0-042e-4727-8870-9b203a2cb286)
 
 ## Usage Instructions
