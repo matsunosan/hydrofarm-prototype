@@ -2,6 +2,7 @@
 
 ## Description of the Project
 The Automated Hydroponic Farm is a system designed to manage water levels and automate key processes in a hydroponic farming environment. Utilizing servo motors, a liquid level sensor, and a relay, the system monitors the water reservoir's level, controls water flow, and provides real-time feedback. This project is ideal for educational purposes and small-scale hydroponic setups.
+
 Note: In TinkerCAD, a water level sensor is not available. Instead, a temperature sensor is used to simulate water level readings for demonstration purposes.
 
 ## Components Used
